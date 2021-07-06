@@ -1,0 +1,78 @@
+let initialState = {
+    forklift_list: [],
+    vehicle_modal: false,
+    forklift_page: 1,
+    selected_forklift: {},
+
+    forklift_maintanace_list: [],
+    selected_forklift_maintanance: {},
+    maintanace_search_qry: '',
+    forklift_maintanance_page: 1,
+
+    all_forklift_list: [],
+    isLoading: false,
+    truck_preinspection_list: [],
+
+}
+
+const forklift = (state = initialState, actions) => {
+    switch (actions.type) {
+        case "FORKLIFT_FETCHING":
+            return {
+                ...state,
+                isLoading: true,
+            }
+        case "FORKLIFT_LIST":
+            return {
+                ...state,
+                forklift_list: actions.forkliftlist,
+                forklift_page: actions.page,
+                isLoading: false
+            }
+
+        case "FORKLIFT_MAINTANACE_LIST":
+            return {
+                ...state,
+                forklift_maintanace_list: actions.maintanace,
+                forklift_maintanance_page: actions.page,
+                isLoading: false
+            }
+            case "TRUCK_PREINSPECTION_LIST":
+                return {
+                    ...state,
+                    truck_preinspection_list: actions.preinspect,
+                    isLoading: false
+                }
+        case "ALL_FORKLIFT_LIST":
+            return {
+                ...state,
+                all_forklift_list: actions.forklifts,
+                isLoading: false
+            }
+
+
+        case "VEHCILE_MODAL":
+            return {
+                ...state,
+                vehicle_modal: actions.modal
+            }
+
+        case "SELECT_FORKLIFT":
+            return {
+                ...state,
+                selected_forklift: actions.forklift
+            }
+
+        case "SELECT_MAINTANACE":
+            return {
+                ...state,
+                selected_forklift_maintanance: actions.maintanace
+            }
+
+        default:
+            return state
+
+    }
+}
+
+export default forklift

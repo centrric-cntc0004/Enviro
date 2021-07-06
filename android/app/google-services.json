@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "5175212623",
+    "project_id": "enviro-notifications",
+    "storage_bucket": "enviro-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5175212623:android:d9840f0448e8d7866ac83a",
+        "android_client_info": {
+          "package_name": "com.reduxenviro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5175212623-09f56q2vpt6mcms8ipdpidfeses99rsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUqMYYKOsBIjl5d20uwypm2nMAJ0QYag8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5175212623-09f56q2vpt6mcms8ipdpidfeses99rsh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
